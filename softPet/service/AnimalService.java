@@ -1,47 +1,39 @@
 package service;
 
 import model.Animal;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class AnimalService {
-
     private List<Animal> animais = new ArrayList<>();
 
     public void cadastrar(Animal animal) {
         animais.add(animal);
     }
 
-    public void remover(String nomeAnimal, String cpfTutor) {
-        Animal paraRemover = null;
-        for (Animal a : animais) {
-            if (a.getNomeAnimal().equalsIgnoreCase(nomeAnimal) &&
-                a.getCliente() != null &&
-                a.getCliente().getCpf().equals(cpfTutor)) {
-                paraRemover = a;
-                break;
+    public void listar() {
+        if (animais.isEmpty()) {
+            System.out.println("Nenhum animal cadastrado.");
+        } else {
+            for (Animal animal : animais) {
+                System.out.println("------");
+                System.out.println("Nome: " + animal.getNomeAnimal());
+                System.out.println("Espécie: " + animal.getEspecie());
+                System.out.println("Raça: " + animal.getRaca());
+                System.out.println("Cor: " + animal.getCor());
+                System.out.println("Idade: " + animal.getIdade());
+                System.out.println("Peso: " + animal.getPeso());
+                System.out.println("Tutor: " + animal.getNomeTutor());
+                System.out.println("------");
             }
         }
-        if (paraRemover != null) {
-            animais.remove(paraRemover);
-            System.out.println("Animal removido com sucesso.");
-        } else {
-            System.out.println("Animal não encontrado para remoção.");
-        }
     }
 
-    public String listar() {
-        StringBuilder sb = new StringBuilder("Animais cadastrados:\n");
-        for (Animal a : animais) {
-            sb.append("- ").append(a.getNomeAnimal()).append(" (Tutor: ").append(a.getNomeTutor()).append(")\n");
-        }
-        return sb.toString();
-    }
-
-    public Animal buscarPorNome(String nomeAnimal) {
-        for (Animal a : animais) {
-            if (a.getNomeAnimal().equalsIgnoreCase(nomeAnimal)) {
-                return a;
+    public Animal buscarPorNome(String nome) {
+        for (Animal animal : animais) {
+            if (animal.getNomeAnimal().equalsIgnoreCase(nome)) {
+                return animal;
             }
         }
         return null;
