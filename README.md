@@ -2,7 +2,7 @@
 Projeto desenvolvido para disciplina de Padrões de Projeto - Professor Ângelo Dias
 
 ## Descrição
-O *Soft Pet* é um sistema desenvolvido para gerenciar o cadastro de clientes, animais, funcionários e serviços em um petshop. Ele permite organizar o fluxo de informações de forma eficiente e segura, utilizando conceitos da programação orientada a objetos.
+O *Soft Pet* é um sistema desenvolvido para gerenciar o cadastro de clientes, animais, funcionários e serviços em um petshop. Ele permite organizar o fluxo de informações de forma eficiente e segura, utilizando conceitos da *programação orientada a objetos* e aplicando os padrões de projeto **Facade** e **Factory** para promover a *modularidade* e a *reutilização de código*.
 
 ## Slides da apresentação
 
