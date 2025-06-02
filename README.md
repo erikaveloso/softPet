@@ -25,13 +25,6 @@ Ele permite organizar o fluxo de informações de forma **eficiente** e **segura
 
 ---
 
-## 🚧 Status do Projeto
-
-🟢 **Concluído**  
-📁 Entregue como parte da disciplina — *Padrões de Projeto*
-
----
-
 ## 👩‍💻 Integrantes
 
 - Érika Veloso
