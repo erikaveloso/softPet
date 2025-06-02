@@ -27,9 +27,9 @@ Ele permite organizar o fluxo de informações de forma **eficiente** e **segura
 
 ## 📚 Tecnologias Utilizadas
 
-- Java ☕
-- Orientação a Objetos 💡
-- Padrões de Projeto 🎯
+- Java 
+- Orientação a Objetos 
+- Padrões de Projeto 
 
 ---
 
